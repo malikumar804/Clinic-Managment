@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Clinic Management System</h1>
+
+        <div class="form-container">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="patient-name">Patient Name:</label>
+                    <input type="text" id="patient-name" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label for="doctor-select">Select Doctor:</label>
+                    <select id="doctor-select" required>
+                        <option value="">--Select a Doctor--</option>
+                        <option value="Dr.Umar">Dr.Umar- Cardiologist</option>
+                        <option value="Dr.Muzalfa">Dr.Muzalfa- Dermatologist</option>
+                        <option value="Dr.Daniyal">Dr.Daniyal- Neurologist</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-date">Select Date:</label>
+                    <input type="date" id="appointment-date" required />
+                </div>
+                <div class="form-group">
+                    <label for="appointment-time">Select Time:</label>
+                    <input type="time" id="appointment-time" required />
+                </div>
+                <button type="submit" id="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+
+        <div class="appointments">
+            <h2>Booked Appointments</h2>
+            <ul id="appointments-list">
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
